@@ -23,13 +23,15 @@ end
 
 def selects_user_names_and_amounts_of_all_pledges_grouped_by_name_then_orders_them_by_the_amount_and_users_name
 "Write your SQL query Here"
-"SELECT users.names, pledges.amount FROM users, pledges GROUP BY name ORDER BY amount, name"
+"SELECT name, SUM(amount) AS amount FROM users, pledges WHERE users.id = pledges.user_id GROUP BY name ORDER BY amount, name"
 end
 
 def selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_category
 "Write your SQL query Here"
+"SELECT category, amount FROM projects, pledges WHERE projects.id = pledges.project_id AND category = 'music'"
 end
 
 def selects_the_category_name_and_the_sum_total_of_the_all_its_pledges_for_the_books_category
 "Write your SQL query Here"
+"SELECT category, SUM(amount) FROM projects, pledges WHERE projects.id = pledges.project_id AND category = 'books' GROUP BY category"
 end
