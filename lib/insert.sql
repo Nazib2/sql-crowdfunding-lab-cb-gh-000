@@ -22,15 +22,15 @@ INSERT INTO users (name, age) VALUES
 
 INSERT INTO projects(title, category, funding_goal, start_date, end_date) VALUES
 ("Help me pay my College Fees", "Education", 10000, '2019-1-1', '2019-2-2' ),
-("Save a poor family", "Life", 5000, '2019-1-1', '2019-2-2'),
+("Save a poor family", "Charity", 5000, '2019-1-1', '2019-2-2'),
 ("Help me set up a Bussiness", "Entrepeneur", 10000, '2019-1-1', '2019-2-2'),
 ("Help a sick people", "Healthcare", 2000, '2019-1-1', '2019-2-2' ),
 ("Build an App", "Tech", 1000, '2019-12-03', '2019-1-1', '2019-2-2' ),
 ("Ensure child's safety, education and health", "Childcare", 5000, '2019-1-1', '2019-2-2'),
-("Build an smart contract for cryptocurrency", "Cryptocurrency", 3000, '2019-1-1', '2019-2-2' ),
+("Build an smart contract for cryptocurrency", "Tech", 3000, '2019-1-1', '2019-2-2' ),
 ("Fund my migration abroad", "Travel and migration", 15000, '2019-1-1', '2019-2-2'),
 ("Feed the Poor", "Charity", 5000, '2019-1-1','2019-2-2'),
-("Save a cat", "Nature", 1000, '2019-1-1', '2019-2-2');
+("Save a cat", "charity", 1000, '2019-1-1', '2019-2-2');
 
 INSERT INTO pledges (id, amount, user_id, project_id) VALUES
 (1, 10.00, 1, 2),
