@@ -1,36 +1,19 @@
-INSERT INTO users (name, age) VALUES
-("Nafisa Noor", 19),
-("Suraiya Shamma", 22),
-("Liana Faria", 40),
-("A A M Nazibul Hauqe", 24),
-("Munem Shahriar", 24),
-("Sabbir Ahmed", 29),
-("Muhammad Aashique Talukdar", 24),
-("Madurjo Madurjo", 25),
-("Apu Sazzad", 45),
-("Zh Shishir", 35),
-("Hasibul Haque Hasib", 26),
-("James McAvoy", 40),
-("Mark Walberg", 48),
-("Johnny Depp", 59),
-("Matt Damon", 49),
-("Reese Witherspoon", 43),
-("Ryan Gosling", 39),
-("Rupert Grint", 30),
-("Ralph Fiennes" 57),
-("Chris Evans" 38);
+INSERT INTO users (id, name, age) VALUES (1, 'Finnebar', 17), (2, 'Bear', 6), (3, 'Iguana', 4), (4, 'Alex', 33),
+(5, 'Amanda', 24), (6, 'Sophie', 24), (7, 'Rosey', 9), (8, 'Victoria', 23), (9, 'Franz', 100), (10, 'Hermione', 30),
+(11, 'Voldemort', 90), (12, 'Marisa', 24), (13, 'Swizzle', 4), (14, 'Sirius', 36), (15, 'Albus', 113), (16, 'Squid', 5),
+(17, 'Whale', 6), (18, 'Pacha', 5), (19, 'Ena', 24), (20, 'Katie', 24);
 
-INSERT INTO projects(title, category, funding_goal, start_date, end_date) VALUES
-("Help me pay my College Fees", "Education", 10000, '2019-1-1', '2019-2-2' ),
-("Save a poor family", "Charity", 5000, '2019-1-1', '2019-2-2'),
-("Help me set up a Bussiness", "Entrepeneur", 10000, '2019-1-1', '2019-2-2'),
-("Help a sick people", "Healthcare", 2000, '2019-1-1', '2019-2-2' ),
-("Build an App", "Tech", 1000, '2019-12-03', '2019-1-1', '2019-2-2' ),
-("Ensure child's safety, education and health", "Childcare", 5000, '2019-1-1', '2019-2-2'),
-("Build an smart contract for cryptocurrency", "Tech", 3000, '2019-1-1', '2019-2-2' ),
-("Fund my migration abroad", "Travel and migration", 15000, '2019-1-1', '2019-2-2'),
-("Feed the Poor", "Charity", 5000, '2019-1-1','2019-2-2'),
-("Save a cat", "charity", 1000, '2019-1-1', '2019-2-2');
+INSERT INTO projects (id, title, category, funding_goal, start_date, end_date) VALUES
+(1, 'Help me buy a guitar', 'music', 500.00, '2013-06-30', '2013-07-30'),
+(2, 'My book on SQL', 'books', 20.00, '2013-01-01', '2014-01-01'),
+(3, 'The next Harry Potter', 'books', 1000.00, '2013-05-30', '2015-05-30'),
+(4, 'Animal shelter needs dog food', 'charity', 400.00, '2013-03-14', '2013-06-30'),
+(5, 'Voldement needs a body', 'charity', 6000.00, '2013-03-20', '2013-09-20'),
+(6, 'The next Inna-Gadda-Davida', 'music', 200.00, '2014-12-30', '2015-12-30'),
+(7, 'Iguana needs tail operation', 'charity', 2000.00, '2013-10-02', '2013-10-30'),
+(8, 'I have bed bugs!', 'charity', 800.00, '2014-06-30', '2014-06-31'),
+(9, 'I want to teach English in China', 'charity', 3000.00, '2013-06-30', '2013-09-30'),
+(10, 'Help save birds of paradise', 'charity', 5000.00, '2012-03-20', '2013-06-30');
 
 INSERT INTO pledges (id, amount, user_id, project_id) VALUES
 (1, 10.00, 1, 2),
@@ -38,7 +21,7 @@ INSERT INTO pledges (id, amount, user_id, project_id) VALUES
 (3, 40.00, 1, 4),
 (4, 50.00, 2, 3),
 (5, 10.00, 3, 2),
-(6, 20.00, 4, 8),
+(6, 20.00, 4, 4),
 (7, 40.00, 5, 10),
 (8, 60.00, 6, 10),
 (9, 50.00, 7, 9),
